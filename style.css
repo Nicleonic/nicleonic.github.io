@@ -520,7 +520,7 @@ footer .credit{
 .card-container{
     display: block;
     padding: 2rem;
-    background: linear-gradient(rgb(45, 45, 50),rgb(45, 45, 50),transparent);
+    background: linear-gradient(rgb(45, 45, 50),rgb(45, 45, 50));
     transition: all ease-in-out .5s;
 }
 .card-container .container{
@@ -546,8 +546,8 @@ footer .credit{
 
 .card{
     /* border-radius: 2rem; */
-    background: rgba(0,0,0,0.2);
-    backdrop-filter: blur(10px);
+    background: var(--black-color);
+    /* backdrop-filter: blur(10px); */
     display: block;
 }
 .s-card-container .card .card-img{
@@ -602,8 +602,7 @@ footer .credit{
 }
 
 .Web-card-container .card{
-    
-    background: rgba(0,0,0,0.2);
+    background: var(--black-color);
     backdrop-filter: blur(10px);
     display: block;
     
@@ -644,12 +643,9 @@ footer .credit{
 }
 
 .Mob-card-container .card{
-    
-    background: rgba(0,0,0,0.2);
+    background: var(--black-color);
     backdrop-filter: blur(10px);
     display: block;
-    
-
 }
 .Mob-card-container .card:nth-child(1) .card-img{
     background: url(images/services/ia.png);
@@ -683,8 +679,7 @@ footer .credit{
 }
 
 .Desk-card-container .card{
-    
-    background: rgba(0,0,0,0.2);
+    background: var(--black-color);
     backdrop-filter: blur(10px);
     display: block;
 }
@@ -723,8 +718,7 @@ footer .credit{
 }
 
 .Embed-card-container .card{
-    
-    background: rgba(0,0,0,0.2);
+    background: var(--black-color);
     backdrop-filter: blur(10px);
     display: block;
     border-bottom: 2px solid var(--second-color);
