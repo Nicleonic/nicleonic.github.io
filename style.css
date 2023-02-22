@@ -318,7 +318,6 @@ html::-webkit-scrollbar-thumb{
     margin-left: auto; 
     margin-right: auto;
     background: linear-gradient(transparent,transparent,rgb(45, 45, 50),rgb(45, 45, 50),rgb(45, 45, 50));
-
 }
 .contact-main-card{
     position: relative;
@@ -349,13 +348,20 @@ html::-webkit-scrollbar-thumb{
 
 }
 .contact-main-card .devise{
+    /* border: 2px solid red; */
     color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 .contact-main-card .devise ul{
-    display: flex;width: 50%;
+    display: flex;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    align-items: center;
     
 }
 .contact-main-card .devise ul > li{
@@ -364,6 +370,11 @@ html::-webkit-scrollbar-thumb{
 .main-card-c .divers{
     display: block;
     margin-bottom: 2rem;
+}
+.main-card-c .divers form{
+    display: grid;
+    grid-template-columns: repeat(auto-fill(minmax(250px,1fr)));
+    gap: 20px;
 }
 .divers .diver-btn{
     text-align: center;
@@ -387,9 +398,13 @@ html::-webkit-scrollbar-thumb{
 .main-card-c .address h3 em{
     color: var(--btn-color);
 }
-.main-card-c .divers form{
+/* .main-card-c .divers form{
     width: 100%;
     display: flex;
+} */
+.main-card-c .divers form .group{
+    box-sizing: border-box;
+    width: auto;
 }
 .main-card-c .divers form .input-group input,
 .main-card-c .divers form .input-group textarea{
@@ -406,8 +421,14 @@ html::-webkit-scrollbar-thumb{
 
 .main-card-c .divers form .group,
 .main-card-c .divers form .input-group{
-    width: 50%;
-    padding: 2rem;
+    padding: 1rem;
+    /* border: 2px solid red; */
+}
+.main-card-c .divers form .group input,
+.main-card-c .divers form .input-group textarea{
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid rgb(85, 63, 2);
 }
 /* footer */
 
@@ -916,13 +937,16 @@ footer .credit{
 @media (max-width:991px) {
     .header{
         width: 100vw;
-        border: 3px saddlebrown solid;
+        /* border: 3px saddlebrown solid; */
     }
     .head{
         overflow-x: hidden;
     }
     .body{
         position: relative;
+    }
+    .main-card-c{
+        width: 100%; 
     }
     .body .main-card{
         position: relative;
@@ -949,12 +973,11 @@ footer .credit{
     }
     .head{
         overflow-x: hidden;
-        border: 3px solid rgb(145, 22, 145);
-
+        /* border: 3px solid rgb(145, 22, 145); */
     }
     .header{
         overflow-x: hidden;
-        border: 3px solid violet;
+        /* border: 3px solid violet; */
         width: 100vw;
     }
     /* .body{
@@ -963,7 +986,7 @@ footer .credit{
     .second-card{
         z-index: 3;
         display: block;
-        border: 3px solid saddlebrown;
+        /* border: 3px solid saddlebrown; */
         position: relative;
     }
     .detail{
@@ -984,7 +1007,7 @@ footer .credit{
     .second-card .team{
         padding: 1em 2em;
         width: 100%;
-        border: 2px solid rgb(160, 35, 87);
+        /* border: 2px solid rgb(160, 35, 87); */
     }
     .second-card .profession > h2,
     .second-card .team > h2{
@@ -994,11 +1017,11 @@ footer .credit{
         padding: 0 1rem;
         width: 100%;
     }
-    .card-selection{
+    /* .card-selection{
         border: 3px solid darkgoldenrod;
-    }
+    } */
     .card-selection .full-size{
-        border: 3px salmon solid;
+        /* border: 3px salmon solid; */
         padding: 0;
     }
     .card-selection .full-size h2{
