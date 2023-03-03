@@ -19,19 +19,31 @@ window.onload = function(){
     });
 
     let readMore1 = document.querySelector('#rMore1');
+    let readMore2 = document.querySelector('#readMore2');
+    let readMore2Target = document.querySelector('.hiden-p2');
     let newDiv = document.createElement("div");
 
+    readMore2.addEventListener('click', (e) =>{
+        readMore2Target.classList.toggle('active');
+    });
+
     let hidenP = document.querySelector('.hiden-p');
-    // readMore1.addEventListener('click', (e) =>{
-    //     hidenP.classList.toggle('active');
-    //     console.log("who!")
-    //     readMore1.parentElement.appendChild(newDiv);
-    //     newDiv.classList.background = 'red';
-    //     // newDiv.innerHTML = "Hello!";
-    //     // console.log(readMore1.parentElement);
-    // });
+    readMore1.addEventListener('click', (e) =>{
+        hidenP.classList.toggle('active');
+        readMore1.parentElement.appendChild(newDiv);
+        newDiv.classList.background = 'red';
+        // newDiv.innerHTML = "Hello!";
+        // console.log(readMore1.parentElement);
 
-
+    });
+    // -----Employee card
+    let card = document.querySelectorAll('.employee');
+    card.forEach( el => {
+        if(el.getAttribute(id)== "nicleo"){
+            el.add
+        }
+    });
+   
     // formular---------------------------
     let form = document.getElementById('form');
     let formName = document.querySelector('#name');
@@ -87,7 +99,7 @@ window.onload = function(){
         console.log("Name " +  formDatas.name + '\n' + formDatas.mail + '\n' + formDatas.date + '\n' + formDatas.msg);
     }
 
-    submitBtn.addEventListener('click',onsubmit);
+    submitBtn.addEventListener('click', onsubmit);
 
     form.addEventListener('submit', (e)=>{
         console.log("form submit");

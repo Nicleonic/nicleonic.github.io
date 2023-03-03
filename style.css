@@ -30,6 +30,16 @@
 .hiden-p.active{
     display: block;
 }
+.hiden-p2.active{
+    display: block;
+    transition: all ease-in .5s;
+    transform-origin: bottom;
+}
+.hiden-p2{
+    display: none;
+    transition: all ease-in .5s;
+    transform-origin: top;
+}
 
 
 /* js controls */
@@ -257,6 +267,7 @@ html::-webkit-scrollbar-thumb{
     position: relative;
 }
 .team .employee{
+    padding: .5rem 1rem;
     transition: all ease-in-out .8s;
     margin-bottom: 2rem;
     cursor: pointer;
@@ -264,7 +275,11 @@ html::-webkit-scrollbar-thumb{
     align-content: space-between;
 }
 .team .employee:hover{
+    color: var(--text-color);
     background: var(--danger);
+}
+.team .employee:hover .description{
+    zoom: 100%;
 }
 .team .employee:nth-child(2) .img{
     background: url(images/nicT.jpg);
